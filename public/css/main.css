@@ -109,3 +109,48 @@
     margin: 0 auto;
     width: 50%;
 }
+
+
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#img-upload{
+    width: 100%;
+}
+#img_upload{
+    padding-top: 5%;
+}
+.alert.alert-success{
+    margin-top: 2%;
+}
+.images{
+    height: 254px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    margin: 3% 0;
+}
+#log_out{
+    float: right;
+}
+.padding_top2{
+  padding-top: 1%;
+}

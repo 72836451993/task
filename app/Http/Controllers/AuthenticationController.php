@@ -96,7 +96,7 @@ class AuthenticationController extends Controller
         // email token
         Mail::to($user->email)->send(new ActivationMail(['email'=>$user->email,'token'=>$token]));
 
-        return [ 'message' => 'mail sent', 'token' => $token ];
+        return redirect()-> back()->with([ 'massage' => 'Activation email send']);
     }
 
     public function registration(Request $request){

@@ -26,5 +26,7 @@ Route::group(['middleware' => 'auth'], function(){
     Route::get('/dashboard','DashboardController@index');
     Route::get('/logout','AuthenticationController@logout');
     Route::post('/activation','AuthenticationController@activateMe');
+    Route::post('/upload_img','DashboardController@upload_img');
+    Route::get('/account_list','DashboardController@account_list');
 
 });
