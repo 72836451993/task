@@ -28,6 +28,9 @@
                 <hr>
                 @endforeach
                     {{ $users->links() }}
+            @else
+                <h1>There are no Accounts</h1>
             @endif
+
     </div>
 @endsection

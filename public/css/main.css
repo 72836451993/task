@@ -136,7 +136,7 @@
     width: 100%;
 }
 #img_upload{
-    padding-top: 5%;
+    padding-top: 1%;
 }
 .alert.alert-success{
     margin-top: 2%;
@@ -153,4 +153,7 @@
 }
 .padding_top2{
   padding-top: 1%;
+}
+.alert.alert-danger {
+    margin-top: 2%;
 }

@@ -12,7 +12,7 @@
 */
 
 
-Route::get('/','MainController@index');
+Route::get('/',['as'=>'/','uses'=>'MainController@index']);
 Route::post('/registration','AuthenticationController@registration');
 Route::post('/login','AuthenticationController@login');
 Route::get('/activate_user','AuthenticationController@activateComplete');
@@ -30,3 +30,7 @@ Route::group(['middleware' => 'auth'], function(){
     Route::get('/account_list','DashboardController@account_list');
 
 });
+
+Route::any('{query}',
+    function() { return redirect('/'); })
+    ->where('query', '.*');

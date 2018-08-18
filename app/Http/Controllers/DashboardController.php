@@ -31,7 +31,7 @@ class DashboardController extends Controller
 
     public function upload_img(Request $request){
         $this->validate($request, [
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:10048',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
         $_image = (new Images());
         $user = Auth::user();
